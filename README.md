@@ -1,4 +1,1 @@
-# git-test
-# java-git-init
-# java-git-init
-# java-git-init
+java-git-init에 멋쟁이사자처럼 백엔드2기 강의관련 코드 및 개인 알고리즘 연습코드를 업로드 했습니다.
