@@ -1,4 +1,4 @@
-package EvenOdd2;
+package Study221004.EvenOdd2;
 
 import java.util.Scanner;
 
