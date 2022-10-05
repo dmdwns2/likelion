@@ -1,4 +1,4 @@
-package CodeupSelfTest.Test1165;
+package CodeUpSelfTest.Test1165;
 /*        지금 1반과 2반이 축구를 하고있다.
 
                 축구경기 타임은 총 90분이고,

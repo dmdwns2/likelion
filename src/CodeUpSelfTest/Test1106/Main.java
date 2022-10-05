@@ -1,4 +1,4 @@
-package CodeupSelfTest.Test1106;
+package CodeUpSelfTest.Test1106;
 
 public class Main {
     public static void main(String[] args) {
