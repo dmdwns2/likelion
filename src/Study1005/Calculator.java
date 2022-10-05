@@ -6,10 +6,6 @@ class Calculator{
     int a;
     int b ;
 
-    public Calculator(int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
 
     public Calculator() {
 
@@ -17,7 +13,7 @@ class Calculator{
 
     public void userInput(){
         try{
-            System.out.println("정수를 두번 입력햊쉐요 a , b");
+            System.out.println("정수를 두번 입력해주세요 a , b");
             Scanner sc = new Scanner(System.in);
             this.a = sc.nextInt();
             this.b = sc.nextInt();
