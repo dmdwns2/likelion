@@ -4,7 +4,9 @@ package Quiz.Quiz1005.Test1018;
 import java.util.Scanner;
 
 public class Main {
-    static String str, a, b;
+    static String str;
+    static String a = "";
+    static String b = "";
     static int standard = 0;
 
     public static void checkInteger(String str) {
