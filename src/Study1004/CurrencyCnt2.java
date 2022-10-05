@@ -1,3 +1,5 @@
+package Study1004;
+
 public class CurrencyCnt2{
     public static void main(String[] args) {
         int currency50000 = 50000;
