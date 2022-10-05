@@ -1,4 +1,4 @@
-package Quiz.Quiz1005.Test1020;
+package Quiz.Quiz221005.Test1020;
 
 
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Quiz.Quiz1005.Test1017;
+package Quiz.Quiz221005.Test1013;
 
 import java.util.Scanner;
 
@@ -7,7 +7,8 @@ public class Main {
         try {
             Scanner sc = new Scanner(System.in);
             int a = sc.nextInt();
-            System.out.println(a+" "+a+" "+a);
+            int b = sc.nextInt();
+            System.out.println(a+" "+b);
         }
         catch (Exception e){
             e.printStackTrace();
