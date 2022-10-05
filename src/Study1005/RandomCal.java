@@ -11,7 +11,7 @@ interface random{
 
 public class RandomCal implements random {
     private int a;
-    private int b = createRandom();
+    final private int b = createRandom();
 
     public void userInput(){
         try{
@@ -26,21 +26,22 @@ public class RandomCal implements random {
 
     public void plus(){
         System.out.println("랜덤 숫자 b ="+this.b);
+        System.out.println("곱셈");
         System.out.println(this.a+this.b);
     }
     public void minus(){
-        System.out.println("랜덤 숫자 b ="+this.b);
+        System.out.println("뺄셈");
         System.out.println(this.a-this.b);
     }
     public void multiple(){
-        System.out.println("랜덤 숫자 b ="+this.b);
+        System.out.println("곱셈");
         System.out.println(this.a*this.b);
     }
     public void devide(){
         if(this.b == 0)
             System.out.println("Random 숫자가 0이 나와서 나눌 수 없습니다.");
         else
-            System.out.println("랜덤 숫자 b ="+this.b);
+            System.out.println("나눗셈");
         System.out.println((double)this.a/this.b);
     }
 }
