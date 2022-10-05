@@ -11,7 +11,8 @@ interface random{
 
 public class RandomCal implements random {
     private int a;
-    final private int b = createRandom();
+    final private int b = random.super.createRandom();
+
 
     public void userInput(){
         try{
@@ -25,8 +26,8 @@ public class RandomCal implements random {
     }
 
     public void plus(){
-        System.out.println("랜덤 숫자 b ="+this.b);
-        System.out.println("곱셈");
+        System.out.println("b ="+this.b);
+        System.out.println("덧셈");
         System.out.println(this.a+this.b);
     }
     public void minus(){
