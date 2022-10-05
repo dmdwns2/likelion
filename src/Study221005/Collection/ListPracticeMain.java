@@ -1,4 +1,4 @@
-package Study1005.Collection;
+package Study221005.Collection;
 
 import java.util.List;
 

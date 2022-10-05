@@ -1,6 +1,6 @@
-package Study1004;
+package Study221004;
 
-public class CurrencyCnt{
+public class CurrencyCnt2{
     public static void main(String[] args) {
         int currency50000 = 50000;
         int currency10000 = 10000;
@@ -10,7 +10,6 @@ public class CurrencyCnt{
         int currency100 = 100;
         int currency50 = 50;
         int currency10 = 10;
-
 
         int refund = 25000;
 

@@ -1,4 +1,4 @@
-package Study1004;
+package Study221004;
 
 public class helloworld {
     public static void main(String[] args) {
