@@ -25,8 +25,11 @@ public class RandomCal implements random {
         }
     }
 
-    public void plus(){
+    public void printB(){
         System.out.println("b ="+this.b);
+    }
+    public void plus(){
+
         System.out.println("덧셈");
         System.out.println(this.a+this.b);
     }
