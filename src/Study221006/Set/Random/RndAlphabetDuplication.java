@@ -1,4 +1,4 @@
-package Study221006.Random;
+package Study221006.Set.Random;
 
 import Study221005.Calculator0.RandomGenerator;
 
