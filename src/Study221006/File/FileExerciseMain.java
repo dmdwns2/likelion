@@ -12,3 +12,14 @@ public class FileExerciseMain {
         }
     }
 }
+
+/* 출력 결과
+./aa_file.txt
+        ./.DS_Store
+        ./out
+        ./README.md
+        ./java-git-init.iml
+        ./.git
+        ./a_file.txt
+        ./.idea
+        ./src*/
