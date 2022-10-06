@@ -1,25 +1,15 @@
 package Study221006.File;
 
-import java.io.File;
+import java.io.IOException;
 
 public class FileExerciseMain {
-    public static void main(String[] args) {
-        // ./
-        File dir = new File("./");
-        File files[] = dir.listFiles();
-        for (File file : files) {
-            System.out.println(file);
-        }
+
+    public static void main(String[] args) throws IOException {
+        ReadFile readFile = new ReadFile("a_file.txt");
+        ReadNChar readNChar = new ReadNChar();
+        String line = readFile.readFileMethod(readFile.getFilename());
+        readNChar.readAChar(line);
+        readNChar.read2Chars(line);
+        readNChar.readNChar(line);
     }
 }
-
-/* 출력 결과
-./aa_file.txt
-        ./.DS_Store
-        ./out
-        ./README.md
-        ./java-git-init.iml
-        ./.git
-        ./a_file.txt
-        ./.idea
-        ./src*/
