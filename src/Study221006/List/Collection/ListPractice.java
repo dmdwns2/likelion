@@ -1,6 +1,4 @@
-package Study221006.Collection;
-
-import Study221005.Collection.Names;
+package Study221006.List.Collection;
 
 import java.util.ArrayList;
 import java.util.List;
