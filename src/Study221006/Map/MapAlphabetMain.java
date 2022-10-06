@@ -19,9 +19,7 @@ public class MapAlphabetMain {
             if(isAlphabet.isAlphabet(repoChar)){
                 alphabetCnt.put(repoChar, alphabetCnt.get(repoChar)+1);
             }
-
         }
         System.out.println(alphabetCnt);
     }
-
 }
