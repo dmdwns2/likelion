@@ -144,7 +144,7 @@ public class PopulationStatistics {
     public static void main(String[] args) throws IOException {
 //        final String address = "/Users/eungjun/Downloads/2021_인구관련연간자료_20220927_66125.csv"; //Write
         final String address = "./from_to.txt"; //Print
-        final String targetFile = "./each_sido_cnt.txt";
+        final String targetFile = "for_heatmap.txt";
         PopulationStatistics populationStatistics = new PopulationStatistics();
         List<PopulationMove> populationMoveList = populationStatistics.readFileByLine(address);
         Map<String, Integer> map = populationStatistics.getMoveCntMap(populationMoveList); // Mapping
@@ -155,8 +155,9 @@ public class PopulationStatistics {
 
         for(String key : map.keySet()){
             String[] fromto = key.split(","); // mapping해서 저장
-            String s = String.format("key:%s value:%d\n",heatMapIdxMap.get(fromto[0]),map.get(key));
-//            String s = String.format("key:%s value:%d\n",key,map.get(key)); cnt 저장
+
+            String s = String.format("[%s, %s, %d]\n",heatMapIdxMap.get(fromto[0]),heatMapIdxMap.get(fromto[1]),map.get(key));
+//            String s = String.format("key:%s value:%d\n",key,map.get(key)); //cnt 저장
             cntResult.add(s);
 //            System.out.printf("key:%s value:%d\n",key,map.get(key));
         }
