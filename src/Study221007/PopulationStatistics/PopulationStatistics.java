@@ -144,7 +144,8 @@ public class PopulationStatistics {
     public static void main(String[] args) throws IOException {
 //        final String address = "/Users/eungjun/Downloads/2021_인구관련연간자료_20220927_66125.csv"; //Write
         final String address = "./from_to.txt"; //Print
-        final String targetFile = "for_heatmap.txt";
+        final String targetFile = "for_heatmap.txt"; //heatmap용
+//        final String targetFile = "each_sido_cnt.txt";
         PopulationStatistics populationStatistics = new PopulationStatistics();
         List<PopulationMove> populationMoveList = populationStatistics.readFileByLine(address);
         Map<String, Integer> map = populationStatistics.getMoveCntMap(populationMoveList); // Mapping
