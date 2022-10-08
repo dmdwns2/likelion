@@ -157,7 +157,7 @@ public class PopulationStatistics {
         for(String key : map.keySet()){
             String[] fromto = key.split(","); // mapping해서 저장
 
-            String s = String.format("[%s, %s, %d]\n",heatMapIdxMap.get(fromto[0]),heatMapIdxMap.get(fromto[1]),map.get(key));
+            String s = String.format("[%s, %s, %d],\n",heatMapIdxMap.get(fromto[0]),heatMapIdxMap.get(fromto[1]),map.get(key));
 //            String s = String.format("key:%s value:%d\n",key,map.get(key)); //cnt 저장
             cntResult.add(s);
 //            System.out.printf("key:%s value:%d\n",key,map.get(key));
