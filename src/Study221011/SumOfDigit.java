@@ -3,15 +3,13 @@ package Study221011;
 public class SumOfDigit {
     public int solution(int n) {
         int result = 0;
-        boolean check = false;
-        for (int i = 0; check == false; i++ ){
-            if(n % Math.pow(10, i) == 0){
-                check = true;
+                result += n%10;
+            for (int i = 0; i < 10; i++) {
+                n = n/10;
+                result += n%10;
             }
-        }
-
-
-        return result;
+        System.out.println(result);
+            return result;
     }
 
     public static void main(String[] args) {
@@ -21,10 +19,9 @@ public class SumOfDigit {
         int val1 = 1234; // 1 + 2 + 3 + 4 = 10
         int result1 = sod.solution(val1);
 
-        if(result1 == 10){
+        if (result1 == 10) {
             System.out.println("테스트 통과했습니다.");
-        }
-        else {
+        } else {
             System.out.println("테스트 실패");
         }
     }
