@@ -16,7 +16,7 @@ public class SumOfDigit {
         // 687 = 6 + 8 + 7 = 21 나오게 짜면 된다.자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요.
         //예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
         SumOfDigit sod = new SumOfDigit();
-        int val1 = 1234; // 1 + 2 + 3 + 4 = 10
+        int val1 = 1234324; // 1 + 2 + 3 + 4 = 10
         int result1 = sod.solution(val1);
 
         if (result1 == 10) {
