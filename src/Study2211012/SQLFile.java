@@ -32,7 +32,7 @@ public class SQLFile {
     }
     public String fromToString(Hospital hospital) {
         return "('" +hospital.getId() + "','" + hospital.getAddress()+ "','" +hospital.getDistrict()+ "','" +hospital.getCategory()
-                + "','" +hospital.getEmergency_room()+ "','" +hospital.getName()+ "','" +hospital.getSubdivision()+ "')\n";
+                + "','" +hospital.getEmergency_room()+ "','" +hospital.getName()+ "','" +hospital.getSubdivision()+ "'),\n";
     }
     public List<Hospital> readFileByLine(String address) throws IOException {
 
@@ -62,7 +62,7 @@ public class SQLFile {
     }
 
     public static void main(String[] args) throws IOException {
-        final String address = "/Users/eungjun/Downloads/서울시 병의원 위치 정보2.csv"; //Write
+        final String address = "/Users/eungjun/Downloads/서울시 병의원 위치 정보3.csv"; //Write
 //        final String address = "./from_to.txt"; //Print
 //        final String targetFile = "for_heatmap.txt"; //heatmap용
 //        final String targetFile = "each_sido_cnt.txt";
