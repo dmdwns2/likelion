@@ -15,7 +15,7 @@
         첫째 줄에 최대값을 출력하고, 둘째 줄에 최대값이 몇 번째 수인지를 출력한다.
 */
 
-        package Study2211012;
+        package Study221012;
 
 import java.util.Scanner;
 

@@ -1,10 +1,8 @@
-package Study2211012;
+package Study221012;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class SQLFile {
     public void createAFile(String address) {
@@ -87,7 +85,6 @@ public class SQLFile {
     public Hospital parse(String data) throws IOException {
         //csv
         String[] splittedLine = data.split(",");
-//        return new Hopistal(splittedLine[6], splittedLine[0]); // Write 원하는 자료만 골라오기
         return new Hospital(splittedLine[0], splittedLine[1], splittedLine[1].split(" ")[0]+" "+splittedLine[1].split(" ")[1], splittedLine[2], splittedLine[6], splittedLine[10], subdivision(splittedLine[10],splittedLine[8]));
         // 구를 나누기위해 스플릿을 이용해서 ~~ ~~구 를 두개를 더해줌.
         // subdivision함수 사용됨.

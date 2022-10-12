@@ -18,7 +18,7 @@
 
         답이 여러개인 경우 그 중 하나만 출력한다.(최대값이 두 개이상 존재하는 경우)*/
 
-package Study2211012;
+package Study221012;
 
 import java.util.Scanner;
 
