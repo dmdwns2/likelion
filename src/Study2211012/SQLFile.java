@@ -52,13 +52,45 @@ public class SQLFile {
 
         return hospitalList;
     }
+    public String subdivision(String name, String division){
+        if(name.contains("외과") || division.contains("외과")){
+            division = "외과";
+        }
+        else if(name.contains("내과") || division.contains("내과")){
+            division = "내과";
+        }
+        else if(name.contains("피부") || division.contains("피부")){
+            division = "피부과";
+        }
+        else if(name.contains("성형") || division.contains("성형")){
+            division = "성형외과";
+        }
+        else if(name.contains("치과") || division.contains("치과")){
+            division = "치과";
+        }
+        else if(name.contains("한의원") || division.contains("한의원")){
+            division = "한의원";
+        }
+        else if(name.contains("소아") || division.contains("소아")){
+            division = "소아";
+        }
+        else if(name.contains("가정의학") || division.contains("가정의학")){
+            division = "가정의학과";
+        }
+        else if(name.contains("정형") || division.contains("정형")){
+            division = "정형외과";
+        }
+        else division = "";
 
+        return division;
+    }
     public Hospital parse(String data) throws IOException {
         //csv
         String[] splittedLine = data.split(",");
 //        return new Hopistal(splittedLine[6], splittedLine[0]); // Write 원하는 자료만 골라오기
-        return new Hospital(splittedLine[0], splittedLine[1], splittedLine[1].substring(0,10), splittedLine[2], splittedLine[6], splittedLine[8], splittedLine[10]);
-        // Print 전입 from 전출 to 6, 0 pasing logic 변경
+        return new Hospital(splittedLine[0], splittedLine[1], splittedLine[1].split(" ")[0]+splittedLine[1].split(" ")[1], splittedLine[2], splittedLine[6], splittedLine[10], subdivision(splittedLine[10],splittedLine[8]));
+        // 구를 나누기위해 스플릿을 이용해서 ~~ ~~구 를 두개를 더해줌.
+        // subdivision함수 사용됨.
     }
 
     public static void main(String[] args) throws IOException {
