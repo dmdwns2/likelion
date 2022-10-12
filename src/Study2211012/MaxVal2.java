@@ -24,10 +24,13 @@ import java.util.Scanner;
 
 public class MaxVal2 {
     public static void main(String[] args) {
+        int max = 0;
+        int indexk = 0;
+        int indexl = 0;
         Scanner sc = new Scanner(System.in);
         String[][] arr = new String[9][9]; // 9x9
 
-        // 한줄씩 받아서 2차원배열에 넣는 방법
+        // 한줄씩 받아서 2차원배열에 넣는 방법 (한번 짜두면 나중에 편함)
         for (int i = 0; i < 9; i++) {
             String str = sc.nextLine();
             String rows[] = str.split(" ");
@@ -37,16 +40,7 @@ public class MaxVal2 {
 
             }
         }
-
-        int max = 0;
-        int indexk = 0;
-        int indexl = 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-
-            }
-        }
-
+        // 비교하고 인덱스 저장 로직
         for (int k = 0; k < arr.length; k++) {
             for (int l = 0; l < arr.length; l++) {
                 if (Integer.parseInt(arr[k][l]) > max) {
@@ -61,24 +55,3 @@ public class MaxVal2 {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
