@@ -4,7 +4,7 @@ class SortAndShow {
     public int[] sort(int[] arr) {
         int index = 0;
         int temp;
-        for (int i = index; i < arr.length; i++) {
+        for (int i = index + 1; i < arr.length; i++) {
             if (arr[index] > arr[i]) {
                 temp = arr[index];
                 arr[index] = arr[i];
