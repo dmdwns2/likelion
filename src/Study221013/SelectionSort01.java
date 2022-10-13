@@ -1,6 +1,6 @@
 package Study221013;
 
-class Compare{
+class SortAndShow{
     public int[] sort(int[] arr){
         int index = 0;
         int temp;
@@ -26,10 +26,10 @@ public class SelectionSort01 {
 
 
     public static void main(String[] args) {
-        Compare compare = new Compare();
+        SortAndShow sortAndShow = new SortAndShow();
         int[] arr = {7, 2, 3, 9, 28, 11};
 
-        compare.sort(arr);
-        compare.showArr(arr);
+        sortAndShow.sort(arr);
+        sortAndShow.showArr(arr);
     }
 }
