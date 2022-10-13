@@ -1,4 +1,4 @@
-package Study221012;
+package Study221012.Hospital;
 
 import java.io.*;
 import java.util.ArrayList;
