@@ -1,4 +1,4 @@
-package Quiz.Quiiz221011.Test1046;
+package Quiz.Quiz221011.Test1046;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

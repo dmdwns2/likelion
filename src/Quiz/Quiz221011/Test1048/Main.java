@@ -1,4 +1,4 @@
-package Quiz.Quiiz221011.Test1050;
+package Quiz.Quiz221011.Test1048;
 
 import java.util.Scanner;
 
@@ -8,8 +8,7 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        if(a == b) System.out.println(1);
-        if(a != b) System.out.println(0);
-
+        int result = a << b;
+        System.out.println(result);
     }
 }

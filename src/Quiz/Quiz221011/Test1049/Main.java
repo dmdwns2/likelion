@@ -1,14 +1,15 @@
-package Quiz.Quiiz221011.Test1047;
+package Quiz.Quiz221011.Test1049;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        int result = a << 1;
-        System.out.println(result);
+        if(a > b) System.out.println(1);
+        if(a <= b) System.out.println(0);
+
     }
 }

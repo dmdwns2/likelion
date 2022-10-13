@@ -1,4 +1,4 @@
-package Quiz.Quiiz221011.Test1043;
+package Quiz.Quiz221011.Test1047;
 
 import java.util.Scanner;
 
@@ -6,9 +6,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int b = sc.nextInt();
 
-
-        System.out.println(a%b);
+        int result = a << 1;
+        System.out.println(result);
     }
 }
