@@ -1,4 +1,4 @@
-package Study221012;
+package Study221012.Hospital;
 
 public class Hospital {
 
