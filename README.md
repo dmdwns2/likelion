@@ -14,4 +14,6 @@
  main branch : 10.04 생성
  
  miniproject01 branch : 10.14 생성
+ 
+ java-mysql-integration branch : 10.17 생성
 ```
