@@ -1,8 +1,8 @@
 package Study221014;
 
-public class InsertionSort01 {
+import java.util.Scanner;
 
-
+public class CodeUp1443 {
     public int[] sort(int[] arr) {
         int key = 1;
 
@@ -27,11 +27,17 @@ public class InsertionSort01 {
     }
 
     public static void main(String[] args) {
-        int[] arr = {8, 5, 6, 2, 4};
 
-
-        InsertionSort01 insertionSort01 = new InsertionSort01();
-        insertionSort01.sort(arr);
-        insertionSort01.show(arr);
+        Scanner sc = new Scanner(System.in);
+        int length = sc.nextInt();
+        int[] arr = new int[length];
+        for (int i = 0; i < length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        CodeUp1443 codeUp1443 = new CodeUp1443();
+        codeUp1443.sort(arr);
+        codeUp1443.show(arr);
     }
 }
+
+
