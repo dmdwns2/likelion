@@ -19,10 +19,10 @@ public class Stack01 {
         this.pointer ++;
     }
 
-    //아래처럼 짜면 오류가 난다.
+
     public int pop(){
 
-        int value = this.arr[this.pointer];
+        int value = this.arr[this.pointer-1];
         this.pointer --;
         return value;
     }
