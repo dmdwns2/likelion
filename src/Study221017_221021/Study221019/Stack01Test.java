@@ -31,7 +31,7 @@ class Stack01Test {
         Assertions.assertEquals(10, stack01.pop());
 
         stack01.push(30);
-        Assertions.assertEquals(30, stack01.);
+        Assertions.assertEquals(30, stack01.pop());
 
     }
 }
