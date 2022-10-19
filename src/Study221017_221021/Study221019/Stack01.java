@@ -18,6 +18,8 @@ public class Stack01 {
         this.arr[this.pointer] = value;
         this.pointer ++;
     }
+
+    //아래처럼 짜면 오류가 난다.
     public int pop(){
 
         int value = this.arr[this.pointer];
