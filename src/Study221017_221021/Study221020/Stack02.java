@@ -1,5 +1,7 @@
 package Study221017_221021.Study221020;
 
+import java.util.EmptyStackException;
+
 public class Stack02 {
 
     private Integer[] arr;
@@ -18,10 +20,18 @@ public class Stack02 {
     }
 
     public int pop(){
+        if (this.isEmpty()) //비어있는 스택에 팝을 한 경우 예외처리
+            throw new EmptyStackException();
        return this.arr[--this.top];
     }
     public void push(int value) {
         this.arr[this.top++] = value;
 
     }
+
+    public boolean isEmpty(){
+        boolean isEmpty = this.top == 0;
+        return isEmpty;
+    }
+
 }

@@ -5,7 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.EmptyStackException;
+import java.util.Stack;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Stack02Test {
 
@@ -36,9 +39,31 @@ public class Stack02Test {
 
         assertEquals(20, stack02.pop());
         assertEquals(10, stack02.pop());
-        //stack.pop() 이 비어있을 땐?
+        //stack.pop() 이 비어있을 땐? 처리를 해주지 않으면 -1 ArrayOut~~ 발생
         stack02.push(30);
         assertEquals(30, stack02.pop());
 
+        assertThrows(EmptyStackException.class,()-> //모던 자바표현
+                stack02.pop()  // 이 구간을 인터페이스라고 생각하면 됨
+        );
+    }
+
+    @Test
+    void isEmpty(){
+        Stack02 stack02 = new Stack02();
+        assertTrue(stack02.isEmpty());
+        stack02.push(10);
+        assertFalse(stack02.isEmpty());
+        stack02.pop();
+        assertTrue(stack02.isEmpty());
+    }
+
+    @Test
+    void realStack() {
+        Stack<Integer> st = new Stack<>();
+
+        assertThrows(EmptyStackException.class,()-> //모던 자바표현
+                st.pop()  // 이 구간을 인터페이스라고 생각하면 됨
+        );
     }
 }
