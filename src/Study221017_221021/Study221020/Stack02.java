@@ -11,36 +11,38 @@ public class Stack02 {
         this.arr = new Integer[10000];
     }
 
-    public Stack02(){
+    public Stack02() {
         this.arr = new Integer[10000];
     }
 
-    public Integer[] getArr(){
+    public Integer[] getArr() {
         return arr;
     }
 
-    public int pop(){
+    public int pop() {
         if (this.isEmpty()) //비어있는 스택에 팝을 한 경우 예외처리
             throw new EmptyStackException();
-       return this.arr[--this.top];
+        return this.arr[--this.top];
     }
+
     public void push(int value) {
         this.arr[this.top++] = value;
 
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         boolean isEmpty = this.top == 0;
         return isEmpty;
     }
 
 
     public int peek() {
-        if (this.isEmpty())
+        if (this.isEmpty()) {
+            throw new EmptyStackException(), new NullPointerException();
+
             throw new EmptyStackException();
-        else if (this.arr[this.top] == null)
             throw new NullPointerException();
-        else
+        } else
             return this.arr[this.top];
     }
 }

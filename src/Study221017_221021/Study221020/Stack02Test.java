@@ -58,7 +58,7 @@ public class Stack02Test {
         assertTrue(stack02.isEmpty());
     }
 
-    @Test
+    @Test /// 오류발생
     void peek() {
         Stack02 stack02 = new Stack02();
         assertThrows(EmptyStackException.class, () -> //모던 자바표현
