@@ -38,9 +38,9 @@ public class Stack02 {
     public int peek() {
         if (this.isEmpty())
             throw new EmptyStackException();
-        else {
-            System.out.println(this.arr[this.top]); //그냥 보려고 추가
+        else if (this.arr[this.top] == null)
+            throw new NullPointerException();
+        else
             return this.arr[this.top];
-        }
     }
 }

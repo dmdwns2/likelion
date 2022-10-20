@@ -64,6 +64,12 @@ public class Stack02Test {
         assertThrows(EmptyStackException.class, () -> //모던 자바표현
                 stack02.peek()
         );
+        assertThrows(NullPointerException.class, () -> //모던 자바표현
+                stack02.peek()
+        );
+        stack02.push(30);
+
+        assertEquals(30, stack02.peek());
     }
 
     @Test
