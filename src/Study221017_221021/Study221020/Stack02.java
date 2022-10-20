@@ -35,14 +35,16 @@ public class Stack02 {
         return isEmpty;
     }
 
-
+    // 에러발생 org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.util.EmptyStackException> but was: <java.lang.NullPointerException>
     public int peek() {
         if (this.isEmpty()) {
-            throw new EmptyStackException(), new NullPointerException();
-
-            throw new EmptyStackException();
-            throw new NullPointerException();
-        } else
-            return this.arr[this.top];
+            try {
+            } catch (EmptyStackException e) {
+                throw new EmptyStackException();
+            } catch (NullPointerException e) {
+                throw new NullPointerException();
+            }
+        }
+        return this.arr[this.top];
     }
 }
