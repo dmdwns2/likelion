@@ -57,6 +57,11 @@ public class Stack02Test {
         stack02.pop();
         assertTrue(stack02.isEmpty());
     }
+    @Test
+    void peek(){
+        Stack02 stack02 = new Stack02();
+        stack02.peek();
+    }
 
     @Test
     void realStack() {
