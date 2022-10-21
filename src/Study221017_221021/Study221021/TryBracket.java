@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class TryBracket {
     Stack<String> stack = new Stack<>();
-
+        //동작은 안함
     public boolean solution(String s) {
 
         if (s.charAt(0) == ')' || s.charAt(0) == '}' || s.charAt(0) == ']')
@@ -34,7 +34,7 @@ public class TryBracket {
                     return false;
 
             }
-
+            System.out.println(stack);
         }
         return stack.size() == 0;
     }

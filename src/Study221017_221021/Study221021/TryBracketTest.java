@@ -14,7 +14,17 @@ class TryBracketTest {
 
         assertTrue(tryBracket.solution("[]{}(){()}"));
     }
-
+/* 결과 스택
+[\[]
+        [\[]
+        [\[, \{]
+[\[, \{]
+[\[, \{, \(]
+[\[, \{, \(]
+[\[, \{, \(, \{]
+[\[, \{, \(, \{, \(]
+[\[, \{, \(, \{, \(]
+[\[, \{, \(, \{, \(]*/
     public static void main(String[] args) {
 
     }
