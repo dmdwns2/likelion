@@ -12,7 +12,7 @@ public class StackBracketTest {
     void bracket(){
         StackBracket stackBracket = new StackBracket();
 
-        assertTrue(stackBracket.solution("(()()()(())(((())))())"));
+        assertTrue(stackBracket.solution(")(()()()(())(((())))())"));
     }
 
     public static void main(String[] args) {
