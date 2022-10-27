@@ -26,7 +26,7 @@ public class UnfinishedPlayer {
         for (int i = 0; i < table.length; i++) {
             for (int j = 0; j < table.length; j++) {
                 if (table[i].get(j).get(memo.get(1)) == 1)
-                    return "";
+                    return table[i].get(j).get(memo.get(1)).toString();
             }
         }
 
