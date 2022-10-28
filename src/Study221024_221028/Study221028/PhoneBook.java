@@ -9,7 +9,7 @@ public class PhoneBook {
             for (var num : phone_book) hs.add(num); // hash set에 중복없이 전화번호를 담음
 
             for (int i = 0; i < phone_book.length; i++) {
-                    if(hs.contains(phone_book[j]))
+                    if(hs.contains(phone_book[i]))
                         return false;
             }
             return true;
