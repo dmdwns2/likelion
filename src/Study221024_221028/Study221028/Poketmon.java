@@ -11,23 +11,14 @@ public class Poketmon {
         for (int i = 0; i < nums.length; i++){
             set.add(nums[i]);
         }
-        System.out.println(set.size()); // 확인
-        return 0;
+        System.out.println(set.size()); // 중복 분리 확인
 
-/*
-        Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < nums. length; i++){
-            set.add(nums[i]);
-        }
-        int N = nums.length / 2;
-
-        if (set.size() < N) {
-            return set.size();
+        if(set.size() % 2 ==0){ // 중복된 배열이 짝수인 경우
+            return set.size() / 2;
         }
         else {
-            return N;
+            return set.size() / 2 + 1;
         }
-*/
 
     }
 
