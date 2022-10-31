@@ -19,7 +19,7 @@ package Study221031_221104.Study221031;
  */
 public class PrepareTest {
     public int[] solution(int[] answers) {
-        int[] answer = {};
+        int[] answer;
 
         String spj1 = "12345".repeat(4000);
         String spj2 = "21232425".repeat(1250);
@@ -54,18 +54,31 @@ public class PrepareTest {
         if (cnt2 == cnt3 || cnt2 == max) max = 10003; // 2,3 이 같을 경우
         if (cnt2 == cnt3 || cnt1 == cnt2) max = 10004; // 모두 같을 경우
 
-        if (max == 10001) System.out.println("[1,2]");
-        else if (max == 10002) System.out.println("[1,3]");
-        else if (max == 10003) System.out.println("[2,3]");
-        else if (max == 10004) System.out.println("[1,2,3]");
-        else if (max == cnt1)
+        if (max == 10001) {
+            answer = new int[]{1,2};
+            System.out.println("[1,2]");
+        } else if (max == 10002) {
+            answer = new int[]{1,3};
+            System.out.println("[1,3]");
+        } else if (max == 10003) {
+            answer = new int[]{2,3};
+            System.out.println("[2,3]");
+        } else if (max == 10004) {
+            answer = new int[]{1,2,3};
+            System.out.println("[1,2,3]");
+        } else if (max == cnt1) {
+            answer = new int[]{1};
             System.out.println("[1]");
-        else if (max == cnt2)
+        } else if (max == cnt2) {
+            answer = new int[]{2};
             System.out.println("[2]");
-        else if (max == cnt3)
+        } else if (max == cnt3) {
+            answer = new int[]{3};
             System.out.println("[3]");
-        else
+        } else {
+            answer = new int[]{};
             System.out.println("오류확인");
+        }
 
 
         return answer;
