@@ -31,23 +31,18 @@ public class PrepareTest {
         int cnt3 = 0;
 
         for (int i = 0; i < answers.length; i++) {
-            int spj1answer = spj1.charAt(i);
-            if (spj1answer == answers[i]) {
+
+            if (spj1.charAt(i) == answers[i]) {
                 cnt1 += 1;
             }
-        }
-        for (int i = 0; i < answers.length; i++) {
-            int spj2answer = spj3.charAt(i);
-            if (spj2answer == answers[i]) {
-                cnt1 += 1;
+            if (spj2.charAt(i) == answers[i]) {
+                cnt2 += 1;
+            }
+            if (spj3.charAt(i) == answers[i]) {
+                cnt3 += 1;
             }
         }
-        for (int i = 0; i < answers.length; i++) {
-            int spj3answer = spj3.charAt(i);
-            if (spj3answer == answers[i]) {
-                cnt1 += 1;
-            }
-        }
+
 
         return answer;
     }
