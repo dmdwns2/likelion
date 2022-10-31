@@ -60,7 +60,7 @@ public class PrepareTest {
         else answer = new int[]{};
 
 
-        System.out.println(cnt1 +" " + cnt2 + " "+ cnt3);
+        System.out.println(cnt1 +" " + cnt2 + " "+ cnt3); // 체크용
         return answer;
     }
 
