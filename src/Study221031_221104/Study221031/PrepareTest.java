@@ -33,8 +33,9 @@ public class PrepareTest {
         // 정답 비교
         for (int i = 0; i < answers.length; i++) {
 
+            System.out.println(spj1.charAt(i) + " " + answers[i]);
             if (spj1.charAt(i) == answers[i]) {
-                cnt1 += 1;
+                cnt1 += 1; // 왜 여길 안타는지 모르겠음 두 수는 같은데
             }
             if (spj2.charAt(i) == answers[i]) {
                 cnt2 += 1;
@@ -47,40 +48,26 @@ public class PrepareTest {
         // 많이맞춘사람 출력
 
         int max = cnt1;
-        if (cnt2 > max) max = cnt2;
-        if (cnt3 > max) max = cnt3;
-        if (cnt2 == cnt1) max = 10001; // 1와 2가 같고 최고점수일 경우
-        if (cnt3 == cnt1) max = 10002; // 1과 3이 같고 최고점수
-        if (cnt2 == cnt3 || cnt2 == max) max = 10003; // 2,3 이 같을 경우
-        if (cnt2 == cnt3 || cnt1 == cnt2) max = 10004; // 모두 같을 경우
-
-        if (max == 10001) {
-            answer = new int[]{1,2};
-            System.out.println("[1,2]");
-        } else if (max == 10002) {
-            answer = new int[]{1,3};
-            System.out.println("[1,3]");
-        } else if (max == 10003) {
-            answer = new int[]{2,3};
-            System.out.println("[2,3]");
-        } else if (max == 10004) {
-            answer = new int[]{1,2,3};
-            System.out.println("[1,2,3]");
-        } else if (max == cnt1) {
-            answer = new int[]{1};
-            System.out.println("[1]");
-        } else if (max == cnt2) {
-            answer = new int[]{2};
-            System.out.println("[2]");
-        } else if (max == cnt3) {
-            answer = new int[]{3};
-            System.out.println("[3]");
-        } else {
-            answer = new int[]{};
-            System.out.println("오류확인");
-        }
+        if (cnt2 > max) max = cnt2; //2 > 1
+        if (cnt3 > max) max = cnt3;  // 3 > 1 or 2 중 큰 값
+        if (cnt2 == cnt3 && cnt1 == cnt2) answer = new int[]{1, 2, 3}; // 모두 같을 경우
+        else if (cnt2 == cnt1 && cnt1 > cnt3) answer = new int[]{1, 2}; // 1와 2가 같고 최고점수일 경우
+        else if (cnt3 == cnt1 && cnt1 > cnt2) answer = new int[]{1, 3};// 1과 3이 같고 최고점수
+        else if (cnt2 == cnt3 && cnt2 > cnt1) answer = new int[]{1, 2};// 2,3 이 같을 경우
+        else if (max == cnt1) answer = new int[]{1};
+        else if (max == cnt2) answer = new int[]{2};
+        else if (max == cnt3) answer = new int[]{3};
+        else answer = new int[]{};
 
 
+        System.out.println(cnt1 +" " + cnt2 + " "+ cnt3);
         return answer;
+    }
+
+    public static void main(String[] args) {
+        PrepareTest prepareTest = new PrepareTest();
+        int[] a = {1,2,3,4,5};
+        prepareTest.solution(a);
+
     }
 }
