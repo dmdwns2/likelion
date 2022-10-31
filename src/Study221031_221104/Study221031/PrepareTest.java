@@ -20,6 +20,35 @@ package Study221031_221104.Study221031;
 public class PrepareTest {
     public int[] solution(int[] answers) {
         int[] answer = {};
+
+        String spj1 = "12345".repeat(4000);
+        String spj2 = "21232425".repeat(1250);
+        String spj3 = "3311224455".repeat(1000);
+
+
+        int cnt1 = 0;
+        int cnt2 = 0;
+        int cnt3 = 0;
+
+        for (int i = 0; i < answers.length; i++) {
+            int spj1answer = spj1.charAt(i);
+            if (spj1answer == answers[i]) {
+                cnt1 += 1;
+            }
+        }
+        for (int i = 0; i < answers.length; i++) {
+            int spj2answer = spj3.charAt(i);
+            if (spj2answer == answers[i]) {
+                cnt1 += 1;
+            }
+        }
+        for (int i = 0; i < answers.length; i++) {
+            int spj3answer = spj3.charAt(i);
+            if (spj3answer == answers[i]) {
+                cnt1 += 1;
+            }
+        }
+
         return answer;
     }
 }
