@@ -30,6 +30,7 @@ public class PrepareTest {
         int cnt2 = 0;
         int cnt3 = 0;
 
+        // 정답 비교
         for (int i = 0; i < answers.length; i++) {
 
             if (spj1.charAt(i) == answers[i]) {
@@ -43,6 +44,24 @@ public class PrepareTest {
             }
         }
 
+        // 많이맞춘사람 출력
+
+        int max = cnt1;
+        if (cnt2 > max) max = cnt2;
+        if (cnt3 > max) max = cnt3;
+        if(cnt2 == cnt1 ) max = 10001; // 1와 2가 같고 최고점수일 경우
+        if (cnt3 == cnt1) max = 10002; // 1과 3이 같고 최고점수
+        if (cnt2 == cnt3 || cnt2 == max) max = 10003; // 2,3 이 같을 경우
+        if (cnt2 == cnt3 || cnt1 == cnt2) max = 10004; // 모두 같을 경우
+
+        if (max == 10001) System.out.println("[1,2]");
+        else if (max == 10002) System.out.println("[1,3]");
+        else if (max == 10003) System.out.println("[2,3]");
+        else if (max == 10004) System.out.println("[1,2,3]");
+        else System.out.println();
+
+        //많이맞춘사람
+        if
 
         return answer;
     }
