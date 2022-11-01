@@ -29,6 +29,5 @@ public class CallbackPrime {
         cb.isDecimal(13, (i, num)-> i < num);
         cb.isDecimal(13, (i, num)-> i <= num/2);
         cb.isDecimal(13, (i, num)-> i * i < num);
-
     }
 }
