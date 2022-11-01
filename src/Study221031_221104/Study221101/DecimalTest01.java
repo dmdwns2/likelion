@@ -6,10 +6,21 @@ package Study221031_221104.Study221101;
  */
 public class DecimalTest01 {
     public boolean isDecimal(int num) {
-        for (int i = 1; i < num; i++) {
-            if(num % i == 0) return true;
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                System.out.println("소수가 아닙니다.");
+                return false;
+            }
         }
+        System.out.println("소수입니다.");
+        return true;
+    }
 
-        return false;
+    public static void main(String[] args) {
+        DecimalTest01 decimalTest01 = new DecimalTest01();
+        decimalTest01.isDecimal(13);
+        decimalTest01.isDecimal(17);
+        decimalTest01.isDecimal(19);
+        decimalTest01.isDecimal(23);
     }
 }
