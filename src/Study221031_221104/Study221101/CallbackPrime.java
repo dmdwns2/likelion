@@ -13,7 +13,7 @@ public class CallbackPrime {
 
 
     public boolean isDecimal(int num, StatementStrategy stmt) {
-        for (int i = 2; compare(i, num); i++) {
+        for (int i = 2; stmt.compare(i, num); i++) {
             if (num % i == 0) {
                 System.out.println("소수가 아닙니다.");
                 return false;
@@ -22,10 +22,7 @@ public class CallbackPrime {
         System.out.println("소수입니다.");
         return true;
     }
-    public boolean compare(int i, int num){
-        if(i < num) return true;
-        else return false;
-    }
+
 
     public static void main(String[] args) {
         CallbackPrime decimalTest02 = new CallbackPrime();
