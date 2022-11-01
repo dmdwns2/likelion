@@ -25,10 +25,10 @@ public class CallbackPrime {
 
 
     public static void main(String[] args) {
-        CallbackPrime decimalTest02 = new CallbackPrime();
-        decimalTest02.isDecimal(13);
-        decimalTest02.isDecimal(17);
-        decimalTest02.isDecimal(19);
-        decimalTest02.isDecimal(23);
+        CallbackPrime cb = new CallbackPrime();
+        cb.isDecimal(13, (i, num)-> i < num);
+        cb.isDecimal(13, (i, num)-> i <= num/2);
+        cb.isDecimal(13, (i, num)-> i * i < num);
+
     }
 }
