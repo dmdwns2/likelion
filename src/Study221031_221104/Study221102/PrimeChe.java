@@ -24,7 +24,8 @@ public class PrimeChe {
             if (list.contains(index)) {
                 for (int i = index * index; i <= SIZE; ) {
                     list.remove(Integer.valueOf(i));
-                    i *= index;
+                    i += index;
+//                    System.out.println("i "+i+" index "+index);
                 }
             }
             System.out.println(list);
