@@ -24,7 +24,7 @@ public class PrimeChe {
         while(index <= SIZE) {
             if (list.contains(index)) {
                 for (int i = index * index; i <= SIZE; ) {
-                    arr[i] = false;
+                    arr[i-2] = false;
 //                    list.remove(Integer.valueOf(i)); 이렇게하면 시간복잡도 문제 발생
                     i += index;
 //                    System.out.println("i "+i+" index "+index);
