@@ -7,7 +7,7 @@ public class PrimeChe {
 
 
 
-    private final int SIZE = 35;
+    private final int SIZE = 2535;
     int index = 2;
 
     List<Integer> list = new ArrayList<>(SIZE);
@@ -38,7 +38,9 @@ public class PrimeChe {
         for(int i = 0; i < SIZE-1 ; i++){
             if(arr[i] == true)
                 cnt++;
+//            System.out.println(arr[i]); 확인용
         }
+
         System.out.println(cnt);
         return cnt;
     }
