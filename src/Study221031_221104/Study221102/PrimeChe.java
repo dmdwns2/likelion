@@ -7,7 +7,7 @@ public class PrimeChe {
 
 
 
-    private final int SIZE = 2535;
+    private final int SIZE = 1_000_000;
     int index = 2;
 
     boolean[] arr = new boolean[SIZE-1];
@@ -33,7 +33,7 @@ public class PrimeChe {
         for(int i = 0; i < SIZE-1 ; i++){
             if(arr[i] == true)
                 cnt++;
-            System.out.println(arr[i]); //확인용
+//            System.out.println(arr[i]); //확인용
         }
 
         System.out.println(cnt);
