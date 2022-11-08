@@ -15,9 +15,11 @@ public class DataExploration {
 
     public int solution (){
 
+
         for(int i = 0; i < size ; i++){
-            if ( arr[i] == target){
-                return i;
+//            System.out.println(arr[i] + " "+ target);
+            if ( Integer.parseInt(arr[i]) == Integer.parseInt(target)){
+                return i + 1;
             }
         }
         return -1;
@@ -25,7 +27,7 @@ public class DataExploration {
 
     public static void main(String[] args) {
         DataExploration dataExploration = new DataExploration();
-        dataExploration.solution();
+        System.out.println(dataExploration.solution());
 
     }
 }
