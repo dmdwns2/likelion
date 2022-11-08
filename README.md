@@ -1,9 +1,6 @@
-# ***멋쟁이사자처럼 백엔드스쿨 2기 😎 🦁***
 # 🚫 branch가 나눠져 있습니다.
 
-## 작성자 : 김응준 🧑🏻‍💻 
-
-
+# 알고리즘
 ---
 
 ```java 
@@ -16,6 +13,4 @@
  miniproject01 branch : 10.14 생성
  
  java-mysql-integration branch : 10.17 생성
-
- repeat : 토비의 스프링 복습 10.25 생성
 ```
