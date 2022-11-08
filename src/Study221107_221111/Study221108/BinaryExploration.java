@@ -21,7 +21,7 @@ public class BinaryExploration {
                 break;
             } else if (nums[median] > TARGET) {
                 indexEnd = median;
-                median = (indexEnd - indexStart) / 2;
+                median = (indexEnd - indexStart) / 2 + indexStart;
             } else {
                 indexStart = median;
                 median = (indexEnd - indexStart) / 2 + indexStart;
