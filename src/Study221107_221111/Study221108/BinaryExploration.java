@@ -13,10 +13,11 @@ public class BinaryExploration {
         // 인덱스(시작점, 끝점) 옮기기
         // 같은지 비교하기
         while (true) {
-            System.out.println(median + " "+nums[median] + " "+indexEnd + " "+indexStart);
-            if (nums[median] == TARGET)
+//            System.out.println(median + " " + nums[median] + " " + indexEnd + " " + indexStart);  // 체크용
+            if (nums[median] == TARGET) {
                 System.out.println("찾는 값은" + (median + 1) + " 번 째에 있습니다. 값 : " + nums[median]);
-            else if (nums[median] > TARGET) {
+                break;
+            } else if (nums[median] > TARGET) {
                 indexEnd = median;
                 median = (indexEnd - indexStart) / 2;
             } else {
