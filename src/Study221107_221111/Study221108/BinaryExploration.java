@@ -15,7 +15,6 @@ public class BinaryExploration {
         // 같은지 비교하기
         while (true) {
             System.out.println("실행 횟수 :" + (++cnt));
-//            System.out.println(median + " " + nums[median] + " " + indexEnd + " " + indexStart);  // 체크용
             if (nums[median] == TARGET) {
                 System.out.println("찾는 값은 " + (median + 1) + "번 째에 있습니다. 값 : " + nums[median]);
                 break;
