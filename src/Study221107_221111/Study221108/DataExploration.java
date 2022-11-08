@@ -6,8 +6,10 @@ public class DataExploration {
 
     Scanner sc = new Scanner(System.in);
     final private int size = sc.nextInt();
-    String str = sc.nextLine();
-    String target = sc.nextLine();
+
+    Scanner sc1 = new Scanner(System.in);
+    String str = sc1.nextLine();
+    String target = sc1.nextLine();
 
     String[] arr = str.split(" ");
 
