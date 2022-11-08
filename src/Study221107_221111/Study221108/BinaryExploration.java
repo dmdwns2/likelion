@@ -18,7 +18,6 @@ public class BinaryExploration {
             else if (nums[median] > TARGET) {
                 indexEnd = median;
                 median = (indexEnd - indexStart) / 2;
-                break;
             } else {
                 indexStart = median;
                 median = (indexEnd - indexStart) / 2;
