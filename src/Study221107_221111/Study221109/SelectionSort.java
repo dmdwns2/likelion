@@ -10,6 +10,7 @@ public class SelectionSort {
         boolean isChange = false;
 
         while (index < arr.length) {
+            min = arr[index];
             for (int i = index; i < arr.length; i++) {
                 if (min > arr[i]) {
                     min = arr[i];
