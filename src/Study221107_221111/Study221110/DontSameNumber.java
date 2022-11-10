@@ -2,7 +2,7 @@ package Study221107_221111.Study221110;
 
 public class DontSameNumber {
     public int[] solution(int[] arr) {
-        int SIZE = 0;
+        int SIZE = 1;
         for(int i = 1; i <arr.length; i++) {
             if (arr[i] == arr[i-1]);
             else SIZE += 1;
