@@ -2,7 +2,7 @@ package Study221107_221111.Study221110;
 
 import java.util.Stack;
 
-public class DontSameNumberUseStack {
+public class DontSameNumberWithStack {
     public Object[] solution(int[] arr) {
 
         Stack<Integer> stack = new Stack<>();
