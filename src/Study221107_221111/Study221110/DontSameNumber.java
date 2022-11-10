@@ -18,7 +18,6 @@ public class DontSameNumber {
 
         return answer;
     }
-
     public static void main(String[] args) {
         DontSameNumber ds = new DontSameNumber();
 
