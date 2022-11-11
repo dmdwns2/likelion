@@ -6,7 +6,7 @@ public class ToBinary {
         int[] answer = new int[2];
         int numOfZero = 0;
         int cnt = 0;
-//        while (s.contains("0")) {
+
         while(true){
             cnt++;
             numOfZero += s.length() - s.replace("0", "").length();
