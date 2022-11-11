@@ -5,8 +5,7 @@ public class SecretMap {
         String[] answer = new String[n];
 
         for (int i = 0; i < n; i++) {
-            int num = arr1[i] | arr2[i];
-            answer[i] = String.format("%0"+(n+1)+"d", Integer.parseInt(Integer.toBinaryString(num)));
+            answer[i] = String.format("%0"+(n+1)+"d", Integer.parseInt(Integer.toBinaryString(arr1[i] | arr2[i])));
             answer[i] = answer[i].replace("1", "#");
             answer[i] = answer[i].replace("0", " ");
             System.out.println(answer[i]);
