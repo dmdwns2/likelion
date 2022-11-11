@@ -9,9 +9,8 @@ public class SecretMap {
 
         for(int i = 0; i< n; i++){
             answer[i] = Integer.toBinaryString(arr1[i] | arr2[i]);
-            System.out.println(answer[i]);
+            System.out.println(answer[i].replace("1","#"));
         }
-
         return answer;
     }
     public static void main(String[] args) {
