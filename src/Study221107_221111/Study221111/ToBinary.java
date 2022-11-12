@@ -11,7 +11,7 @@ public class ToBinary {
             cnt++;
             numOfZero += s.length() - s.replace("0", "").length();
             s = Integer.toBinaryString(s.replace("0", "").length());
-            if(Integer.parseInt(s) == 1) break;
+            if(Integer.parseInt(s) <= 1) break;
         }
 
         answer[0] = cnt;
