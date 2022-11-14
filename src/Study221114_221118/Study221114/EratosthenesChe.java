@@ -28,8 +28,9 @@ public class EratosthenesChe {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i] +  " = " + check[i]);
+            if(check[i] == true) cnt++;
         }
-
+        System.out.println("소수의 개수 : " + cnt);
     }
 
 
