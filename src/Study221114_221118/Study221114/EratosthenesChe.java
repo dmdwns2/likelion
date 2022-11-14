@@ -26,6 +26,8 @@ public class EratosthenesChe {
 
         }
 
+        cnt = 0;
+
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i] +  " = " + check[i]);
             if(check[i] == true) cnt++;
