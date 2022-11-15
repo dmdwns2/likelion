@@ -7,10 +7,10 @@ import java.util.List;
 public class QuickSort {
 
     public void solution(Integer[] arr){
-        System.out.println(sort(Arrays.asList(arr)));
-
+        System.out.println(sort(Arrays.asList(arr))); // 배열을 리스트로 변환해서 재귀함수에 태움
     }
 
+    // List를 병합해주는 메서드
     public List<Integer> merge(List<Integer> left, List<Integer> mid, List<Integer> right) {
         List<Integer> answer = new ArrayList<>();
         answer.addAll(left);
@@ -19,6 +19,7 @@ public class QuickSort {
         return answer;
     }
 
+    // 정렬 메서드 좌 중 우 로 나누어서 정렬하는 재귀함수
     public List<Integer> sort(List<Integer> arr){
         if(arr.size() < 1) return arr;
         else {
