@@ -37,7 +37,7 @@ public class QuickSortArr {
             forIdx++;
             midIdx++;
             System.out.println("for idx : " + forIdx);
-            System.out.println("for answer : "+ answer[i]);
+            System.out.println("for answer : "+ answer[forIdx]);
         }
         for (int i = 0; i < answer.length; i++) {
             if (right[i] == 0){
@@ -47,7 +47,7 @@ public class QuickSortArr {
             forIdx++;
             rightIdx++;
             System.out.println("for idx : " + forIdx);
-            System.out.println("for answer : "+ answer[i]);
+            System.out.println("for answer : "+ answer[forIdx]);
         }
 
 
