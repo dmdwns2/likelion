@@ -24,30 +24,33 @@ public class QuickSortArr {
                 break;
             }
             answer[forIdx] = left[leftIdx];
-            forIdx++;
-            leftIdx++;
+
             System.out.println("for idx : " + forIdx);
             System.out.println("for answer : " + answer[i]);
+            forIdx++;
+            leftIdx++;
         }
         for (int i = 0; i < answer.length; i++) {
             if (mid[i] == 0){
                 break;
             }
             answer[forIdx] = mid[midIdx];
-            forIdx++;
-            midIdx++;
+
             System.out.println("for idx : " + forIdx);
             System.out.println("for answer : "+ answer[forIdx]);
+            forIdx++;
+            midIdx++;
         }
         for (int i = 0; i < answer.length; i++) {
             if (right[i] == 0){
                 break;
             }
             answer[forIdx] = right[rightIdx];
-            forIdx++;
-            rightIdx++;
+
             System.out.println("for idx : " + forIdx);
             System.out.println("for answer : "+ answer[forIdx]);
+            forIdx++;
+            rightIdx++;
         }
 
 
@@ -59,11 +62,11 @@ public class QuickSortArr {
     }
 
     public int[] sort(int[] arr) {
-        if (arr[0] == 0) return arr;
+        if (arr[0] == 0) return arr; // 초기화 1
         cnt++; // 회차
         System.out.println("현재 : " + cnt);
         int pivot = arr[arr.length / 2];
-        if(pivot == 0) return arr;
+        if(pivot == 0) return arr;  // 초기화 2
         int[] left = new int[arr.length];
         int[] right = new int[arr.length];
         int[] mid = new int[arr.length];
