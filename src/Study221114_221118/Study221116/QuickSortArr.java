@@ -17,41 +17,6 @@ public class QuickSortArr {
         int midIdx = 0;
         int rightIdx = 0;
         int forIdx = 0;
-//        for (int i = 0; i < left.length; i++) {
-//            System.out.println("leftIdx : " + leftIdx);
-//            if (left[i] == 0) {
-//                if (i == 0) {
-//                    leftIdx = 0;
-//                    break;
-//                }
-//                leftIdx = i - 1;
-//                break;
-//            }
-//            leftIdx++;
-//        }
-//        for (int i = 0; i < left.length; i++) {
-//            System.out.println("rightIdx : " + rightIdx);
-//            if (right[i] == 0) {
-//                if (i == 0) {
-//                    rightIdx = 0;
-//                    break;
-//                }
-//                rightIdx = i - 1;
-//                break;
-//            }
-//            rightIdx = i;
-//        }
-//        for (int i = 0; i < left.length; i++) {
-//            System.out.println("midIdx : " + midIdx);
-//            if (mid[i] == 0) {
-//                if (i == 0) {
-//                    midIdx = 0;
-//                    break;
-//                }
-//                midIdx = i - 1;
-//                break;
-//            }
-//        }
 
         //for
         for (int i = 0; i < answer.length; i++) {
