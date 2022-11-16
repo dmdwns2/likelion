@@ -66,7 +66,15 @@ public class QuickSortArr {
         cnt++; // 회차
         System.out.println("현재 : " + cnt);
         int pivot = arr[arr.length / 2];
-        if(pivot == 0) return arr;  // 초기화 2
+        int pivotCount = 3;
+        while(pivot == 0){
+            if(arr[0] == 0)
+                return arr;  // 초기화 2
+            pivot = arr[arr.length / pivotCount];
+            pivotCount++;
+        }
+
+
         int[] left = new int[arr.length];
         int[] right = new int[arr.length];
         int[] mid = new int[arr.length];
