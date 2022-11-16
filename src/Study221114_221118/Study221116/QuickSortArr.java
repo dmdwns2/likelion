@@ -59,9 +59,11 @@ public class QuickSortArr {
     }
 
     public int[] sort(int[] arr) {
+        if (arr[0] == 0) return arr;
         cnt++; // 회차
         System.out.println("현재 : " + cnt);
         int pivot = arr[arr.length / 2];
+        if(pivot == 0) return arr;
         int[] left = new int[arr.length];
         int[] right = new int[arr.length];
         int[] mid = new int[arr.length];
