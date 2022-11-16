@@ -9,11 +9,12 @@ public class QuickSortArr {
 
     public int[] sort(int[] arr){
         int pivot = arr[arr.length/2];
-        int[] left = new int[arr.length/2 - 1];
-        int[] right = new int[arr.length - (arr.length/2)];
+        int[] left = new int[arr.length];
+        int[] right = new int[arr.length];
         int[] mid = new int[arr.length];
         int leftIdx = 0;
-        int rightIdx = arr.length/2 + 1;
+        int rightIdx = 0;
+        int midIdx = 0;
         // O O O O /O/ O O O
 
         for(int i = 0; i < arr.length ; i++){
@@ -23,11 +24,16 @@ public class QuickSortArr {
             } else if (pivot < arr[i]) {
                 right[rightIdx] = arr[i];
                 rightIdx++;
-            }else
+            }else {
+                mid[midIdx] = arr[i];
+                midIdx++;
+            }
 
         }
-
-        return
+        for(int i = 0; i< arr.length;i++){
+        System.out.println(left[i] +mid[i] + right[i]);
+        }
+        return arr;
     }
 
     public static void main(String[] args) {
