@@ -88,15 +88,15 @@ public class QuickSortArr {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(left[i] + " ");
         }
-        System.out.println();
+        System.out.println("left");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(mid[i] + " ");
         }
-        System.out.println();
+        System.out.println("mid");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(right[i] + " ");
         }
-        System.out.println();
+        System.out.println("right");
         return merge(sort(left), mid, sort(right));
     }
 
