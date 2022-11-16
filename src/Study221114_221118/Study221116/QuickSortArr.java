@@ -21,34 +21,40 @@ public class QuickSortArr {
         //for
         for (int i = 0; i < answer.length; i++) {
             if (left[i] == 0) {
-                forIdx = i;
-                System.out.println("for idx : " + forIdx);
                 break;
             }
-            answer[i] = left[leftIdx];
+            answer[forIdx] = left[leftIdx];
+            forIdx++;
             leftIdx++;
+            System.out.println("for idx : " + forIdx);
             System.out.println("for answer : " + answer[i]);
         }
-        for (int i = forIdx; i < answer.length; i++) {
+        for (int i = 0; i < answer.length; i++) {
             if (mid[i] == 0){
-                forIdx = i;
-                System.out.println("for idx : " + forIdx);
                 break;
             }
-            answer[i] = mid[midIdx];
+            answer[forIdx] = mid[midIdx];
+            forIdx++;
             midIdx++;
-            System.out.println("for answer : ");
+            System.out.println("for idx : " + forIdx);
+            System.out.println("for answer : "+ answer[i]);
         }
-        for (int i = forIdx; i < answer.length; i++) {
+        for (int i = 0; i < answer.length; i++) {
             if (right[i] == 0){
-                System.out.println("for idx : " + forIdx);
                 break;
             }
-            answer[i] = right[rightIdx];
+            answer[forIdx] = right[rightIdx];
+            forIdx++;
             rightIdx++;
-            System.out.println("for answer : ");
+            System.out.println("for idx : " + forIdx);
+            System.out.println("for answer : "+ answer[i]);
         }
-        System.out.println(answer);
+
+
+        //출력
+        for (int i = 0; i < left.length; i++)
+        System.out.print(answer[i]+ " ");
+        System.out.println();
         return answer;
     }
 
@@ -89,7 +95,7 @@ public class QuickSortArr {
             System.out.print(right[i] + " ");
         }
         System.out.println();
-        return merge(left, mid, right);
+        return merge(sort(left), mid, sort(right));
     }
 
     public static void main(String[] args) {
