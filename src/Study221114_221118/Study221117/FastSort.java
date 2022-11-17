@@ -1,13 +1,16 @@
 package Study221114_221118.Study221117;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class FastSort {
-    public void solution(int[] arr) {
+    public void solution(int[] arr) throws IOException{
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         srt(arr);
         //출력
         for (int i = 0; i < srt(arr).length; i++)
-            System.out.print(srt(arr)[i]+ " ");
+            bw.write(srt(arr)[i]+ " ");
+        bw.flush();
+        bw.close();
     }
     public int[] srt(int[] arr) {
         if (arr[0] == 0) return arr; // 초기화 1
@@ -84,12 +87,13 @@ public class FastSort {
     }
 
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int size = Integer.parseInt(br.readLine());
+        String str = br.readLine();
+        String[] strarr = str.split(" ");
 
-        int size = sc.nextInt();
-        String str = sc.nextLine();
-        String[] strarr = sc.nextLine().split(" ");
+        br.close();
 
         int[] arr = new int[size];
         for (int i = 0; i < arr.length; i++) {
