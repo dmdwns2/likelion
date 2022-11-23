@@ -10,12 +10,12 @@ public class NonRecursionFibonacciNumbers {
     public static int fibonacci(int num) {
         List<Integer> arr = new ArrayList<>();
         arr.add(1); // 1st
-        arr.add(2); // 2nd
+        arr.add(1); // 2nd
         for (int i = 2; i < num; i++) {
             arr.add(arr.get(i - 1) + arr.get(i - 2));
         }
 
-        return arr.get(num-2);
+        return arr.get(num-1);
     }
 
     public static void main(String[] args) throws IOException {
