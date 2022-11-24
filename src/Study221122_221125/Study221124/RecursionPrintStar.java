@@ -30,9 +30,6 @@ public class RecursionPrintStar {
         bf.close();
 
         // Output
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        String outStr = String.valueOf(println(num,1));
-        bw.write(outStr);
-        bw.close();
+        println(num,1);
     }
 }
