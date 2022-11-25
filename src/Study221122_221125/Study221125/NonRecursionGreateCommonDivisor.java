@@ -10,11 +10,9 @@ public class NonRecursionGreateCommonDivisor {
             if (num1 > num2){
                 System.out.println(num1 + " " + num2); //확인용
                 num1 = num1-num2;
-                num2 = num2;
             }
             else if (num1 < num2) {
                 System.out.println(num1 + " " + num2); //확인용
-                num1 = num1;
                 num2 = num2 - num1;
             }
         }
@@ -24,11 +22,12 @@ public class NonRecursionGreateCommonDivisor {
         // Input
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String str = bf.readLine();
+        bf.close();
         String[] strArr = str.split(" ");
 
         int num1 = Integer.parseInt(strArr[0]);
         int num2 = Integer.parseInt(strArr[1]);
-        bf.close();
+
 
         // Output
         // Output
