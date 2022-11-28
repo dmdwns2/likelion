@@ -5,7 +5,7 @@ public class PrintAlphabet02 {
     public static void print(){
 
         for(char ch = 0x41; ch <= 0x5A; ch++) {
-            for (char ch2 = 0x41; ch <= 0x5A; ch++) {
+            for (char ch2 = 0x41; ch2 <= 0x5A; ch2++) {
                 System.out.print(ch);
                 System.out.println(ch2);
             }
