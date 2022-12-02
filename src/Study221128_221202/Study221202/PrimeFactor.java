@@ -26,20 +26,9 @@ public class PrimeFactor {
             System.out.println(num);
         }
         else{  //num이 소수가 아니라면
-            notPrime(result);
+            String[] strArr = result.split(" ");
+            System.out.println(strArr[strArr.length-1]);
         }
-    }
-
-    public static void notPrime(String result){
-        String[] strArr = result.split(" ");
-
-        String max = strArr[0];
-        for(int i = 0; i < strArr.length; i++) {
-            if(Long.parseLong(strArr[i]) > Long.parseLong(max)){
-                max = strArr[i];
-            }
-        }
-        System.out.println(max);
     }
 
     public static void main(String[] args) throws IOException {
