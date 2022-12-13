@@ -38,10 +38,11 @@ public class OptimalStrategy2 {
             int left = Math.max(coins[i], coins[i+1]);
             int right = Math.min(coins[i], coins[i+1]);
             dp[i][i+1] = new Pair1(left,right);
+            System.out.println(dp[i][i+1].toString());
         }
 
-        for (int i = 0; i < coins.length; i++) {
-            System.out.println(dp[i][i].toString());
-        }
+//        for (int i = 0; i < coins.length; i++) {
+//            System.out.println(dp[i][i].toString());
+//        }
     }
 }
